@@ -10,6 +10,8 @@
 
 ![today vs 3](https://user-images.githubusercontent.com/94229949/175725902-a9c02a9e-bbb6-4a65-be86-5c3ff1768ead.png)
 
+##The script is able to read from the CSV file ,create each user on the server, and add to an existing group called developers.User created also has a default home folder,has a .ssh folder within its HOME folder and an authorized_keys file which has the public key.
+
 ##Spinned up an Ubuntu Server on AWS.
 
 ![shell 3](https://user-images.githubusercontent.com/94229949/175733941-88c2069c-c3dd-47cd-88b3-6e8448308ec1.png)
@@ -24,17 +26,17 @@
 
 ##created a directory called Shell and moved Onboarding_users to Shell directory.
 
-##Created files names.csv ,id_rsa ,id_rsa.pub using touch command.
+##Created files ' names.csv ' , ' id_rsa ' , ' id_rsa.pub ' using  ' touch ' command.
 
-##Private key was copied to the file id_rsa and public key was copied to the file name  id_rsa.pub
+##Private key was copied to the file ' id_rsa ' and public key was copied to the file ' id_rsa.pub '
 
-##Names were entered into names.csv, which the script would utilize to generate new users. 
+##Names were entered into ' names.csv ', which the script would utilize to generate new users. 
 
 ![today vs 8](https://user-images.githubusercontent.com/94229949/175747241-15c6ba36-1274-4338-bb78-c97c89d8e90f.png)
 
-##Created a group called developers where all new users will be added to using the 'groupadd' command.
+##Created a group called developers where all new users will be added to using the ' groupadd ' command.
 
-##Changed permission on the Onboarding_Users file using 'chmod +x' command 
+##Changed permission on the Onboarding_Users file using ' chmod +x ' command 
 
 ##Ran the Shell Script 
 
@@ -46,16 +48,27 @@
 
 ![yeemi1](https://user-images.githubusercontent.com/94229949/175748887-dd23ef78-0f4d-417d-aac1-a07764f213a3.png)
 
-##To check the new users has been created  ,i ran 'ls -l /home/' command 
+##To check if the new users has been created from ' names.csv ' file ,i ran ' ls -l /home/ ' command 
 
 
 ![today vs 11](https://user-images.githubusercontent.com/94229949/175749142-a882e5fe-22ca-44e0-952b-0ea713889650.png)
 
-##To log in as the new user i copied the private key to a file called yemi.pem as the public key is already stored to all new users on the server.
+##Checked if the authorized_keys file and.ssh file were created with the appropriate permissions and the public key was successfully stored in the authorized_keys file.
 
-##SSH using the private key and the name of a new generated user.
+![bb1](https://user-images.githubusercontent.com/94229949/175750872-7b5a6f63-ed7b-4aa9-ba22-12f9d43513bc.png)
+
+
+![bb2](https://user-images.githubusercontent.com/94229949/175750882-234ab5c0-0746-49fa-a1cf-be012893cdae.png)
+
+##To log in as the new user i copied the private key to a file called yemi.pem on my local machine.
+
+##SSH using the private key and the name of the new generated user.
+
+##Logged in as @gbadero
 
 ![today vs 12 1](https://user-images.githubusercontent.com/94229949/175749643-20faf256-ce1c-48c4-b0cd-31beb7aaaf33.png)
+
+##Logged in as @busola
 
 ![today vs 12](https://user-images.githubusercontent.com/94229949/175749685-280cb18b-f58b-4b7e-80fb-03ad12a8e7ad.png)
 
